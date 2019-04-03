@@ -151,3 +151,5 @@ function tag (literals, ...substitutions) {
 let message2 = String.raw`Multiline\nstring`;
 console.log(message2)           // 'Multiline\nstring'
 ```
+
+所有的字符转义，包括 unicode 码位转义，都会输出他们的原生形式。
