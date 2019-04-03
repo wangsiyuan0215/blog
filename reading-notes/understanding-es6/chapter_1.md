@@ -91,7 +91,6 @@ bar = function () {
 
 ## 块级声明
 
-
 刚刚接触 JavaScript 的同学对变量提升机制需要适应和习惯，在做项目或者是练习的时候偶尔会出现 bug。为此，ES6 引入了块级作用域来强化变量**生命周期**的控制。
 
 块级作用域用于声明在指定的作用域之外无法被访问的变量。在 ES5 标准时代作用域仅分为全局和局部的，这样导致了在 if 语句块中声名的变量由于被提升至顶部使其可以在作用域内随便被访问（当然，访问的位置要在其声明语句的下方）。这种情况在 ES6 标准中不会发生，因为 if 语句声明的块就是块级作用域。
@@ -102,6 +101,8 @@ bar = function () {
 * 块中（字符 `{` 和 `}` 之间的区域，比如 `if / for` 等语句声明的块）。
 
 ES6 标准的目的并非是取替 ES5 标准，它更是一种对于 ES5 各个方面的不足的补全和优化。因此，若想要使用块级作用域，使用 `let` 和 `const` 关键字声明变量（使用 `var` 关键字声明的变量仍然遵从 ES5 标准，块级作用域不会生效）。
+
+### 临时死区 —— TDZ
 
 在学习 `let` 与 `const` 关键字声明的时候，突如其来的一个新概念 —— “临时死区（Temporal Distortion Zone，TDZ）”让我觉得很好奇。
 
@@ -120,3 +121,64 @@ const bar = 'bar';
 // Uncaught ReferenceError: foo is not defined
 // Uncaught ReferenceError: bar is not defined
 ```
+
+TDZ 通常是指，在同一块级作用域下，使用 let、const 关键字对变量**声明时——静态**对变量进行标记，标记该变量尚在 TDZ 中，在<font style="color: red;">未初始化</font>之前引用该变量会触发**运行时**错误。
+
+### 循环中的函数
+
+在 ES6 之前，如果想要在循环中执行函数并引用每次循环对应的 index 索引需要借助闭包和 IIFE 来实现：
+
+```javascript
+var funcs = [];
+
+for (var i = 0; i < 10; i++) {
+    // 闭包 + IIFE
+    funcs.push((function(index) {
+        console.log(index);
+    })(i));
+}
+
+funcs.forEach(function(item) { item(); }); // 输出 0 -> 9
+```
+
+ES6 提出的块级作用域，可以有效的解决这类问题：
+
+```javascript
+var funcs = [];
+
+for (let i = 0; i < 10; i++) {
+    // 闭包 + IIFE
+    funcs.push(function(i) {
+        console.log(i);
+    });
+}
+
+funcs.forEach(function(item) { item(); }); // 输出 0 -> 9
+```
+let 关键字简化了上述过程，每次循环迭代时都会创建一个新变量 `i`，并以之前迭代中同名变量的值将其初始化。
+
+### 全局作用域绑定
+
+*【ES5】`var` 关键字声明的变量会**创建/覆盖**于全局作用域中:*
+```javascript
+console.log(window.RegExp);     // ƒ RegExp() { [native code] }
+var RegExp = 'HELLO!';
+console.log(window.RegExp);     // 'HELLO!'
+
+var ncz = 'HI';
+console.log(window.ncz);        // 'HI'
+```
+
+从上面代码中可以看出来，`RegExp` 在未声明之前在 window 中是函数，在使用 `var` 关键字声明并初始化为字符串后，window 中 `RegExp` 属性被覆盖了；而且 `ncz` 变量仅仅做了 `var` 的变量声明，但是却被创建在了 window 全局对象中。
+
+*【ES6】使用 let 和 const 关键字声明变量则完全不会出现这种问题：*
+```javascript
+const RegExp = 'HELLO!';
+console.log(RegExp);                        // 'HELLO!'
+console.log(window.RegExp);                 // ƒ RegExp() { [native code] }
+console.log(window.RegExp === RegExp)       // false
+
+let ncz = 'HI';
+console.log('ncz' in window);        // false
+```
+在使用 `let` 和 `const` 关键字声明变量时不会覆盖全局对象 window 中已存在的属性，而是会遮盖（此处的“遮盖”的意思是针对全局对象是默认引用的情况）。
