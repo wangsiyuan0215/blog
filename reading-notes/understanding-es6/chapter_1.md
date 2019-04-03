@@ -11,54 +11,11 @@
 
 那么变量提升则是在全局或局部作用域内，不论在什么位置通过 var 关键字声明的变量在**解释（编译）阶段**，会提升至当前作用域的顶部。以下面的代码为例：
 
-```javascript
-// before hoisting
-var x;
-var y = 2;
-
-function foo () {
-    var z = 3;
-
-    if (condition) {
-        // 因为在 ES5 标准中仅有全局和函数作用域
-        // 即使在 if 语句块中 var value 仍然被提升至函数 foo 内部作用域的顶部
-        var value = 'blue';
-    } else {
-        console.log(value);
-    }
-
-    console.log(value);
-    console.log('x+y+z', x + y + z);
-}
-
-x = 3;
-foo(); // 3 + 2 + 3 = 8
-```
+![chapter_1_1.png](./images/chapter_1_1.png)
 
 经过变量提升：
 
-```javascript
-// after hoisting
-var x;
-var y;
-function foo () {
-    var z;
-    var value;
-    z = 3;
-
-    if (condition) {
-        value = 'blue';
-    } else {
-        console.log(value); // undefined
-    }
-
-    console.log(value); // undefined if condition === false
-    console.log('x+y+z', x + y + z);
-}
-y = 2;
-x = 3;
-foo(); // 8
-```
+![chapter_1_2.png](./images/chapter_1_2.png)
 
 通过以上栗子可以看出，在全局或函数作用域内，变量声明和函数声明均会被提升至当前作用域的顶部，这样解释了为什么先赋值后声明的代码在**运行时**不会报错。需要注意的是，声明函数有两种方式：
 
@@ -67,27 +24,7 @@ foo(); // 8
 
 *以函数表达式创建的函数并不会被提升至顶部*：
 
-```JavaScript
-// hoisting for function
-// foo 函数会被提升至当前作用域的顶部
-function foo () {
-    // ...
-}
-
-// -----------------
-
-// bar 函数不会被提升至当前作用域的顶部
-var bar = function () {
-    // ...
-}
-
-// after hoisting ===>
-
-var bar;
-bar = function () {
-    // ...
-}
-```
+![chapter_1_3.png](./images/chapter_1_3.png)
 
 ## 块级声明
 
@@ -108,19 +45,7 @@ ES6 标准的目的并非是取替 ES5 标准，它更是一种对于 ES5 各个
 
 首先，这个名词的来源是 JavaScript 的社区，因为 ES6 标准中没有明确提到 TDZ，但是通常借助它来解释 `let` 和 `const` 不提升的原因。话不多说上代码：
 
-```javascript
-// TDZ
-// 考虑下面这种情况会输出什么？
-console.log(foo);
-console.log(bar);
-
-let foo = 1;
-const bar = 'bar';
-
-// ====>
-// Uncaught ReferenceError: foo is not defined
-// Uncaught ReferenceError: bar is not defined
-```
+![chapter_1_4.png](./images/chapter_1_4.png)
 
 TDZ 通常是指，在同一块级作用域下，使用 let、const 关键字对变量**声明时——静态**对变量进行标记，标记该变量尚在 TDZ 中，在<font style="color: red;">未初始化</font>之前引用该变量会触发**运行时**错误。
 
@@ -128,57 +53,24 @@ TDZ 通常是指，在同一块级作用域下，使用 let、const 关键字对
 
 在 ES6 之前，如果想要在循环中执行函数并引用每次循环对应的 index 索引需要借助闭包和 IIFE 来实现：
 
-```javascript
-var funcs = [];
-
-for (var i = 0; i < 10; i++) {
-    // 闭包 + IIFE
-    funcs.push((function(index) {
-        console.log(index);
-    })(i));
-}
-
-funcs.forEach(function(item) { item(); }); // 输出 0 -> 9
-```
+![chapter_1_5.png](./images/chapter_1_5.png)
 
 ES6 提出的块级作用域，可以有效的解决这类问题：
 
-```javascript
-var funcs = [];
+![chapter_1_6.png](./images/chapter_1_6.png)
 
-for (let i = 0; i < 10; i++) {
-    // 闭包 + IIFE
-    funcs.push(function(i) {
-        console.log(i);
-    });
-}
-
-funcs.forEach(function(item) { item(); }); // 输出 0 -> 9
-```
 let 关键字简化了上述过程，每次循环迭代时都会创建一个新变量 `i`，并以之前迭代中同名变量的值将其初始化。
 
 ### 全局作用域绑定
 
 *【ES5】`var` 关键字声明的变量会**创建/覆盖**于全局作用域中:*
-```javascript
-console.log(window.RegExp);     // ƒ RegExp() { [native code] }
-var RegExp = 'HELLO!';
-console.log(window.RegExp);     // 'HELLO!'
 
-var ncz = 'HI';
-console.log(window.ncz);        // 'HI'
-```
+![chapter_1_7.png](./images/chapter_1_7.png)
 
 从上面代码中可以看出来，`RegExp` 在未声明之前在 window 中是函数，在使用 `var` 关键字声明并初始化为字符串后，window 中 `RegExp` 属性被覆盖了；而且 `ncz` 变量仅仅做了 `var` 的变量声明，但是却被创建在了 window 全局对象中。
 
 *【ES6】使用 let 和 const 关键字声明变量则完全不会出现这种问题：*
-```javascript
-const RegExp = 'HELLO!';
-console.log(RegExp);                        // 'HELLO!'
-console.log(window.RegExp);                 // ƒ RegExp() { [native code] }
-console.log(window.RegExp === RegExp)       // false
 
-let ncz = 'HI';
-console.log('ncz' in window);        // false
-```
+![chapter_1_8.png](./images/chapter_1_8.png)
+
 在使用 `let` 和 `const` 关键字声明变量时不会覆盖全局对象 window 中已存在的属性，而是会遮盖（此处的“遮盖”的意思是针对全局对象是默认引用的情况）。
