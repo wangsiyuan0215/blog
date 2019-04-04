@@ -1,6 +1,9 @@
 # Welcome To My Blog
 
-欢迎来到我的博客 Github，如果对你有些许帮助，请 star 给与我鼓励，多谢！
+欢迎来到我的博客 Github，如果对你有些许帮助，请 star 给我鼓励，多谢啦！
+
+![./image_1.jpg](./image_1.jpg)
+*<p style="text-align: center;">found in [artstation](https://www.artstation.com/)</p>*
 
 *本博客不定期更新，敬请谅解...*
 
@@ -14,10 +17,14 @@
   * [《前端面试之BFC》](https://github.com/wangsiyuan0215/blog/issues/9) 
   * [《探索JS引擎工作原理》](https://github.com/wangsiyuan0215/blog/issues/8) 
   * [《Let’s experiment with functional generators and the pipeline operator in JavaScript》 ](https://github.com/wangsiyuan0215/blog/issues/7) 
-  
+
+<br />
+
 * 读书笔记（持续更新中...)
   * [《深入理解 ES6》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/understanding-es6)
   * [《计算机网络》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/cs-network)
+
+<br />
 
 * 原创文章
   * [React 源码学习](https://github.com/wangsiyuan0215/blog/tree/master/react-reading-notes)
