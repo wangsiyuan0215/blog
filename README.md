@@ -2,7 +2,7 @@
 
 欢迎来到我的博客 Github，如果对你有些许帮助，请 star 给我鼓励，多谢啦！
 
-![./image_1.jpg](./image_1.jpg)
+![./image_1.jpg](./assets/image_1.jpg)
 *<p style="text-align: center;">found in [artstation](https://www.artstation.com/)</p>*
 
 *本博客不定期更新，敬请谅解...*
