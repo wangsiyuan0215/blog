@@ -30,4 +30,3 @@
   * [React 源码学习](https://github.com/wangsiyuan0215/blog/tree/master/react-reading-notes)
   * [隐式转换 与 ”==“ 转换规则那点事儿](https://github.com/wangsiyuan0215/blog/issues/6)
   * [论关于在 ES6 的 class 使用箭头函数方式的区别以及继承与 ES5 组合寄生式继承的区别](https://github.com/wangsiyuan0215/blog/issues/5)
-  * [隐式转换 与 ”==“ 转换规则那点事儿](https://github.com/wangsiyuan0215/blog/issues/6)
