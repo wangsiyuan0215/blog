@@ -16,8 +16,11 @@
   * [《成为自信的node.js 开发者（二）》](https://github.com/wangsiyuan0215/blog/issues/10) 
   * [《前端面试之BFC》](https://github.com/wangsiyuan0215/blog/issues/9) 
   * [《探索JS引擎工作原理》](https://github.com/wangsiyuan0215/blog/issues/8) 
-  * [《Let’s experiment with functional generators and the pipeline operator in JavaScript》 ](https://github.com/wangsiyuan0215/blog/issues/7) 
-
+  * [《Let’s experiment with functional generators and the pipeline operator in JavaScript》](https://github.com/wangsiyuan0215/blog/issues/7) 
+  * [《Git Flow 工作流》](https://github.com/wangsiyuan0215/blog/issues/17) 
+  * [《NPM - 看起来“高大上”的操作方式（上集）》](https://github.com/wangsiyuan0215/blog/issues/16) 
+  * [《NPM - 看起来“高大上”的操作方式（下集）》](https://github.com/wangsiyuan0215/blog/issues/15) 
+  
 <br />
 
 * 读书笔记（持续更新中...)
