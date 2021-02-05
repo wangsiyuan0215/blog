@@ -23,7 +23,6 @@ _本博客不定期更新，敬请谅解..._
   - [《vue 源码中值得学习的方法》](https://github.com/wangsiyuan0215/blog/issues/18)
   - [《CSS 性能优化的 8 个技巧（摘取重点）》](https://github.com/wangsiyuan0215/blog/issues/19)
   - [《读 - JavaScript 深入系列 15 篇》](https://github.com/wangsiyuan0215/blog/issues/20)
-  - [《React 是如何将 JSX 转换为 JS 对象的？》](https://github.com/wangsiyuan0215/blog/issues/21)
 
 <br />
 
@@ -38,3 +37,4 @@ _本博客不定期更新，敬请谅解..._
   - [隐式转换 与 ”==“ 转换规则那点事儿](https://github.com/wangsiyuan0215/blog/issues/6)
   - [论关于在 ES6 的 class 使用箭头函数方式的区别以及继承与 ES5 组合寄生式继承的区别](https://github.com/wangsiyuan0215/blog/issues/5)
   - [深入理解 AngularJs 之 $provider](https://github.com/wangsiyuan0215/blog/issues/14)
+  - [《React 是如何将 JSX 转换为 JS 对象的？》](https://github.com/wangsiyuan0215/blog/issues/21)
