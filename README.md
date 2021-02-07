@@ -38,3 +38,4 @@ _本博客不定期更新，敬请谅解..._
   - [论关于在 ES6 的 class 使用箭头函数方式的区别以及继承与 ES5 组合寄生式继承的区别](https://github.com/wangsiyuan0215/blog/issues/5)
   - [深入理解 AngularJs 之 $provider](https://github.com/wangsiyuan0215/blog/issues/14)
   - [《React 是如何将 JSX 转换为 JS 对象的？》](https://github.com/wangsiyuan0215/blog/issues/21)
+  - [《关于补码》](https://github.com/wangsiyuan0215/blog/issues/22)
