@@ -29,6 +29,7 @@ _本博客不定期更新，敬请谅解..._
 - 读书笔记（持续更新中...)
   - [《深入理解 ES6》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/understanding-es6)
   - [《计算机网络》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/cs-network)
+  - [《深入浅出 NodeJS》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/深入浅出%20nodejs)
 
 <br />
 
