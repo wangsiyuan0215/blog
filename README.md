@@ -30,8 +30,8 @@ _本博客不定期更新，敬请谅解..._
   - [《深入理解 ES6》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/understanding-es6)
   - [《计算机网络》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/cs-network)
   - [《深入浅出 NodeJS》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/深入浅出%20nodejs)
-  - [《Node 即学即用》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/深入浅出%20nodejs)
-  - [《你不知道的 JavaScript（上卷）》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/深入浅出%20nodejs)
+  - [《Node 即学即用》](https://github.com/wangsiyuan0215/blog/blob/master/reading-notes/node%20%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8/readme.md)
+  - [《你不知道的 JavaScript（上卷）》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%20JavaScript%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89)
 
 <br />
 
