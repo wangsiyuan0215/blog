@@ -32,6 +32,7 @@ _本博客不定期更新，敬请谅解..._
   - [《深入浅出 NodeJS》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/深入浅出%20nodejs)
   - [《Node 即学即用》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/深入浅出%20nodejs)
   - [《你不知道的 JavaScript（上卷）》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/深入浅出%20nodejs)
+  - [《深入理解 TypeScript》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/深入浅出%20nodejs
 
 <br />
 
