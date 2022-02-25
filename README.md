@@ -35,7 +35,6 @@ _本博客不定期更新，敬请谅解..._
   - [《你不知道的 JavaScript（上卷）》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%20JavaScript%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89)
   - [《深入理解 TypeScript》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%20JavaScript%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89)
     <br />
-
 - 原创文章（[issues](https://github.com/wangsiyuan0215/blog/issues)）
   - [React 源码学习](https://github.com/wangsiyuan0215/blog/tree/master/react-reading-notes)
   - [隐式转换 与 ”==“ 转换规则那点事儿](https://github.com/wangsiyuan0215/blog/issues/6)
@@ -43,3 +42,6 @@ _本博客不定期更新，敬请谅解..._
   - [深入理解 AngularJs 之 $provider](https://github.com/wangsiyuan0215/blog/issues/14)
   - [《React 是如何将 JSX 转换为 JS 对象的？》](https://github.com/wangsiyuan0215/blog/issues/21)
   - [《关于补码》](https://github.com/wangsiyuan0215/blog/issues/22)
+- 其他笔记
+  - [React Native 新架构是如何工作的？]()
+  - [前端面试题]()
