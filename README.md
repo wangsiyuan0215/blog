@@ -23,8 +23,9 @@ _本博客不定期更新，敬请谅解..._
   - [《vue 源码中值得学习的方法》](https://github.com/wangsiyuan0215/blog/issues/18)
   - [《CSS 性能优化的 8 个技巧（摘取重点）》](https://github.com/wangsiyuan0215/blog/issues/19)
   - [《读 - JavaScript 深入系列 15 篇》](https://github.com/wangsiyuan0215/blog/issues/20)
-
-<br />
+  - [React Native 新架构是如何工作的？]()
+  
+  <br />
 
 - 读书笔记（持续更新中...)
 
@@ -34,7 +35,9 @@ _本博客不定期更新，敬请谅解..._
   - [《Node 即学即用》](https://github.com/wangsiyuan0215/blog/blob/master/reading-notes/node%20%E5%8D%B3%E5%AD%A6%E5%8D%B3%E7%94%A8/readme.md)
   - [《你不知道的 JavaScript（上卷）》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%20JavaScript%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89)
   - [《深入理解 TypeScript》](https://github.com/wangsiyuan0215/blog/tree/master/reading-notes/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%20JavaScript%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89)
-    <br />
+
+  <br />
+
 - 原创文章（[issues](https://github.com/wangsiyuan0215/blog/issues)）
   - [React 源码学习](https://github.com/wangsiyuan0215/blog/tree/master/react-reading-notes)
   - [隐式转换 与 ”==“ 转换规则那点事儿](https://github.com/wangsiyuan0215/blog/issues/6)
@@ -42,6 +45,9 @@ _本博客不定期更新，敬请谅解..._
   - [深入理解 AngularJs 之 $provider](https://github.com/wangsiyuan0215/blog/issues/14)
   - [《React 是如何将 JSX 转换为 JS 对象的？》](https://github.com/wangsiyuan0215/blog/issues/21)
   - [《关于补码》](https://github.com/wangsiyuan0215/blog/issues/22)
-- 其他笔记
-  - [React Native 新架构是如何工作的？]()
+  
+  <br />
+  
+- 其他
+  
   - [前端面试题]()
