@@ -23,7 +23,7 @@ _本博客不定期更新，敬请谅解..._
   - [《vue 源码中值得学习的方法》](https://github.com/wangsiyuan0215/blog/issues/18)
   - [《CSS 性能优化的 8 个技巧（摘取重点）》](https://github.com/wangsiyuan0215/blog/issues/19)
   - [《读 - JavaScript 深入系列 15 篇》](https://github.com/wangsiyuan0215/blog/issues/20)
-  - [React Native 新架构是如何工作的？](https://github.com/wangsiyuan0215/blog/blob/master/reading-notes/React%20Native%20%E6%96%B0%E6%9E%B6%E6%9E%84%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.md)
+  - [《React Native 新架构是如何工作的？》](https://github.com/wangsiyuan0215/blog/blob/master/reading-notes/React%20Native%20%E6%96%B0%E6%9E%B6%E6%9E%84%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.md)
   
   <br />
 
